@@ -1,0 +1,92 @@
+html {
+}
+
+body {
+  border: lightgrey solid;
+}
+
+/*Header*/
+
+header {
+  height: 64px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.logo {
+  display: flex;
+  margin-left: 24px;
+}
+
+.desktop {
+  display: flex;
+  align-content: center;
+  margin-right: 24px;
+}
+
+.desktop li {
+  display: inline;
+  padding: 8px;
+}
+
+.title h3 span {
+  text-weight: bold;
+}
+
+/*Banner*/
+
+.banner {
+  display: flex;
+  background-color: lightgrey;
+  align-items: center;
+  border: red solid;
+  width: 100%;
+}
+
+.banner image {
+  width: 60%;
+}
+
+.banner-image img {
+  width: 60%;
+  margin: 32px 24px;
+  border: red solid;
+}
+
+.banner-text {
+  border: red solid;
+  width: 40%;
+}
+
+.button {
+  background-color: grey;
+}
+
+/* Information */
+
+.Information {
+  display: flex;
+}
+
+.info-column-1-image img {
+  width: 60%;
+}
+
+.info-column-1 {
+  margin: 32px 24px;
+}
+
+.info-column-2 {
+  margin-top: 32px;
+}
+
+.info-column-2-box {
+  display: flex;
+}
+
+.info-column-2 img {
+}
