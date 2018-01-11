@@ -33,10 +33,6 @@ header {
   padding: 8px;
 }
 
-.title h3 span {
-  text-weight: bold;
-}
-
 /*Banner*/
 
 .banner {
@@ -44,26 +40,29 @@ header {
   background-color: lightgrey;
   align-items: center;
   border: red solid;
-  width: 100%;
 }
 
-.banner image {
+.banner-image {
   width: 60%;
+  margin: 32px 24px;
 }
 
 .banner-image img {
-  width: 60%;
-  margin: 32px 24px;
+  width: 100%;
   border: red solid;
 }
 
 .banner-text {
   border: red solid;
-  width: 40%;
+  width: 25%;
 }
 
 .button {
   background-color: grey;
+}
+
+.button h3 {
+
 }
 
 /* Information */
@@ -72,21 +71,73 @@ header {
   display: flex;
 }
 
-.info-column-1-image img {
-  width: 60%;
-}
-
 .info-column-1 {
   margin: 32px 24px;
+  width: 60%;
+  border: red solid;
+}
+
+.info-column-1-image img {
+  width: 100%;
 }
 
 .info-column-2 {
+  display: flex;
+  flex-direction: column;
   margin-top: 32px;
+  width: 40%;
 }
 
 .info-column-2-box {
   display: flex;
 }
 
-.info-column-2 img {
+.info-column-2-box-text {
+  width: 65%;
+}
+
+.info-column-2-box-image {
+  width: 35%;
+  padding: 16px;
+}
+
+.info-column-2-box-image img {
+  width: 100%;
+}
+
+/*Courses*/
+
+.courses {
+  background-color: lightgrey;
+}
+
+.courses h2 {
+  text-align: center;
+}
+
+.courses .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.course-box {
+  margin: 16px;
+}
+
+.course-box-image {
+  height: auto;
+}
+
+.course-box-image img {
+}
+
+/*Thesis*/
+
+.thesis .container {
+  display: flex;
+}
+
+.thesis-column-1 {
+
 }
