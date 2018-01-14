@@ -3,6 +3,8 @@ html {
 
 body {
   border: lightgrey solid;
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
 }
 
 /*Header*/
@@ -33,6 +35,10 @@ header {
   padding: 8px;
 }
 
+.desktop a {
+  text-decoration: none;
+}
+
 /*Banner*/
 
 .banner {
@@ -54,11 +60,13 @@ header {
 
 .banner-text {
   border: red solid;
-  width: 25%;
+  width: 20%;
 }
 
 .button {
   background-color: grey;
+  text-align: center;
+  color: white;
 }
 
 .button h3 {
@@ -113,16 +121,17 @@ header {
 
 .courses h2 {
   text-align: center;
+  padding-top: 32px;
 }
 
 .courses .container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .course-box {
   margin: 16px;
+  width: 20%;
 }
 
 .course-box-image {
@@ -134,10 +143,56 @@ header {
 
 /*Thesis*/
 
+.thesis h2 {
+  text-align: center;
+  padding-top: 32px;
+}
+
 .thesis .container {
   display: flex;
 }
 
 .thesis-column-1 {
+  margin: 32px 24px;
+  width: 60%;
+}
 
+.thesis-column-1 video {
+  width: 100%;
+}
+
+.thesis-column-2-box {
+  display: flex;
+}
+
+.thesis-column-2-box-image {
+  padding: 16px;
+  width: 35%;
+}
+
+.thesis-column-2-box-image img {
+  width: 100%;
+}
+
+.thesis-column-2-box-text {
+  width: 65%;
+}
+
+/*Reimagine*/
+
+
+
+/*Footer*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer li {
+  display: inline;
+}
+
+.footer a {
+    text-decoration: none;
 }
