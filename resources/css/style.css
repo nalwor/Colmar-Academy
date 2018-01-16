@@ -280,8 +280,9 @@ transition: color 1s ease;
   margin: 0px 16px 32px 0px;
   width: 25%;
   background-color: white;
-  transition: border-bottom 0.333s ease;
+  transition: 0.5s ease-in-out;
   position: relative;
+  border-bottom: solid 5px white;
 }
 
 .course-box:hover{
@@ -302,14 +303,14 @@ transition: color 1s ease;
   font-size: 1rem;
 }
 
-.course-box-text h3 {
+/* .course-box-text h3 {
   transition: color 1s ease-in-out;
-}
+} */
 
-.course-box-text h3:hover {
+/* .course-box-text h3:hover {
   color: #E74C3C;
   text-decoration: underline;
-}
+} */
 
 /*Thesis*/
 
