@@ -75,27 +75,62 @@ header {
 .desktop a {
   text-decoration: none;
   color: grey;
+   position: relative;
 }
 
 .desktop a:hover {
   color: #2980B9;
 }
 
-.mobile {
-  display: none;
-  width: 100%;
+.link {
+  position: relative;
 }
 
-@media only screen and (max-width: 450px) {
-  .content {
+.link:after{
+  content: '';
+  position: absolute;
+  width: 0; height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #2980B9;
+  transition: width .2s ease;
+}
+
+.link:hover:after{
+  width: 100%;
+  left: 0;
+  background: #2980B9;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+
+.colmar {
+  display: none;
+}
+
+.desktop {
     display: none;
   }
 
-  .mobile {
-    display: inline-block;
-  }
+.mobile {
+  display: flex;
+  width: 100%;
+}
 
-  header {
+.mobile ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+}
+
+header {
     height: 64px;
   }
 }
@@ -120,11 +155,13 @@ header {
 
 .banner-text {
   width: 30%;
+  height: 50%;
   margin-left: 24px;
 }
 
 .banner-text-2 {
   width: 70%;
+  padding-bottom: 5px;
 }
 
 .button {
@@ -132,7 +169,8 @@ header {
   text-align: center;
   color: white;
   width: 50%;
-  transition: background-color 1s ease;
+  padding: 8px 8px;
+  transition: background-color 0.5s ease;
 }
 
 .button:hover {
@@ -218,6 +256,7 @@ transition: color 1s ease;
 
 .container {
   padding: 32px 72px;
+  position: relative;
 }
 
 .courses {
@@ -241,14 +280,26 @@ transition: color 1s ease;
   margin: 0px 16px 32px 0px;
   width: 25%;
   background-color: white;
+  transition: border-bottom 0.333s ease;
+  position: relative;
+}
+
+.course-box:hover{
+  border-bottom: solid 5px #E74C3C;
 }
 
 .course-box-image img {
   width: 100%;
+  height: auto;
 }
 
 .course-box-text {
-  padding: 16px;
+  padding: 8px;
+
+}
+
+.course-box-text p {
+  font-size: 1rem;
 }
 
 .course-box-text h3 {
@@ -264,7 +315,7 @@ transition: color 1s ease;
 
 .thesis h2 {
   text-align: center;
-  padding-top: 32px;
+  padding-top: 16px 32px 16px 32px;
   margin: auto;
 }
 
