@@ -7,7 +7,6 @@ body {
   border: lightgrey 2px solid;
   line-height: 1.4;
   color: #585858;
-
 }
 
 h1 {
@@ -27,7 +26,7 @@ h4 {
 }
 
 h5 {
-  font-size:
+  font-size: 0.8rem;
 }
 
 /*Header*/
@@ -40,7 +39,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  border: red solid;
 }
 
 .colmar {
@@ -80,7 +78,7 @@ header {
 }
 
 .desktop a:hover {
-  color: darkgrey;
+  color: #2980B9;
 }
 
 @media only screen and (max-width: 450px) {}
@@ -91,7 +89,6 @@ header {
   display: flex;
   background-color: WhiteSmoke;
   align-items: center;
-  border: red solid;
 }
 
 .banner-image {
@@ -101,23 +98,31 @@ header {
 
 .banner-image img {
   width: 100%;
-  border: red solid;
 }
 
 .banner-text {
-  border: red solid;
-  width: 28%;
+  width: 30%;
   margin-left: 24px;
 }
 
-.banner-text h1 {
+.banner-text-2 {
+  width: 70%;
 }
 
 .button {
-  background-color: darkgrey;
+  background-color: #2980B9;
   text-align: center;
   color: white;
-  width: 80%;
+  width: 50%;
+  transition: background-color 1s ease;
+}
+
+.button:hover {
+  background-color: #3498DB;
+}
+
+.button a {
+  text-decoration: none;
 }
 
 .button h3 {
@@ -133,11 +138,14 @@ header {
 .info-column-1 {
   margin: 32px 24px;
   width: 60%;
-  border: red solid;
 }
 
 .info-column-1-image img {
   width: 100%;
+}
+
+.info-column-1-text h5 {
+  font-weight: 500;
 }
 
 .info-column-2 {
@@ -153,10 +161,12 @@ header {
   /*margin-top: 32px;*/
   display: flex;
   transition: background-color 1s ease;
+  transition: border-bottom 1s ease;
 }
 
 .info-column-2-box:hover {
   background-color: WhiteSmoke;
+  border-bottom: #E74C3C;
 }
 
 .info-column-2-box-text {
@@ -166,7 +176,16 @@ header {
 
 .info-column-2-box-text a {
 text-decoration: none;
+color: #2980B9;
 }
+
+/* .info-column-2-box-text h3 {
+transition: color 1s ease;
+}
+
+.info-column-2-box-text h3:hover {
+  color: #E74C3C;
+} */
 
 .info-column-2-box-image {
   width: 35%;
@@ -198,24 +217,29 @@ text-decoration: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  border: red solid;
 }
 
 .course-box {
-  margin: 0px 16px;
+  margin: 0px 16px 32px 0px;
   width: 25%;
-  border: red solid;
   background-color: white;
 }
 
 .course-box-image img {
   width: 100%;
-  border: red solid;
 }
 
 .course-box-text {
   padding: 16px;
-  border: red solid;
+}
+
+.course-box-text h3 {
+  transition: color 1s ease-in-out;
+}
+
+.course-box-text h3:hover {
+  color: #E74C3C;
+  text-decoration: underline;
 }
 
 /*Thesis*/
@@ -233,11 +257,9 @@ text-decoration: none;
 .thesis-column-1 {
   margin: 32px 24px;
   width: 60%;
-    border: red solid;
 }
 
 .thesis-column-2 {
-    border: red solid;
     margin-top: 48px;
 }
 
@@ -251,7 +273,7 @@ text-decoration: none;
 }
 
 .thesis-column-2-box:hover {
-  background-color: gainsboro;
+  background-color: WhiteSmoke;
   }
 
 .thesis-column-2-box-image {
@@ -280,6 +302,10 @@ footer {
   border-top: lightgrey 1px solid;
 }
 
+footer h5 {
+  margin-left: 24px;
+}
+
 .footer li {
   display: inline;
 }
@@ -287,4 +313,8 @@ footer {
 .footer a {
     text-decoration: none;
     font-size: .8rem;
+    color: grey;
+}
+.footer {
+  margin-right: 24px;
 }
