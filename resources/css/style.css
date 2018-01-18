@@ -54,6 +54,7 @@ header {
   align-content: center;
   margin: auto 0;
   height: 32px;
+  cursor: pointer;
 }
 
 .logo {
@@ -231,6 +232,13 @@ header {
   padding: 8px;
 }
 
+@media only screen and (max-width: 720px) {
+
+.banner-text {
+  margin: 0px; Need to shrink to H2
+}
+}
+
 @media only screen and (max-width: 480px) {
 
   .banner {
@@ -247,7 +255,8 @@ header {
 
   .banner-text {
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
+    padding-bottom: 32px;
     margin: 0px;
 }
   .banner-text-1 {
@@ -325,13 +334,17 @@ text-decoration: none;
 color: #2980B9;
 }
 
-.info-column-2-box-image {
+.info-column-2-box-desktop {
   width: 35%;
   padding: 16px;
 }
 
-.info-column-2-box-image img {
+.info-column-2-box-desktop img {
   width: 100%;
+}
+
+.info-column-2-box-mobile {
+  display: none;
 }
 
 @media only screen and (max-width: 480px) {
@@ -339,8 +352,34 @@ color: #2980B9;
 .info-column-1 {
   display: none;
 }
+
+.information {
+  display: block;
 }
 
+.info-column-2 {
+  width: 100%;
+}
+
+.info-column-2-box {
+padding-top: 16px;
+ display: block;
+}
+
+.info-column-2-box-desktop {
+  display: none;
+}
+
+.info-column-2-box-mobile {
+  width: 100%;
+  display: block;
+}
+
+.info-column-2-box-mobile img {
+  width: 100%;
+}
+
+}
 /*Courses*/
 
 .courses .container {
@@ -379,8 +418,8 @@ color: #2980B9;
 }
 
 .course-box-image img {
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .course-box-text {
@@ -392,6 +431,37 @@ color: #2980B9;
   font-size: 1rem;
 }
 
+.courses-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+
+.courses {
+  background-color: white;
+}
+
+.courses h2 {
+  padding-bottom: 16px;
+}
+
+.courses .container {
+  display: none;
+}
+
+.courses-mobile {
+  display: block;
+}
+.course-box-mobile {
+  padding: 16px 16px 24px 16px;
+  background-color: WhiteSmoke;
+  margin: 8px 16px;
+  cursor: pointer;
+}
+.course-box-mobile:hover {
+  background-color: lightgrey;
+}
+}
 /*Thesis*/
 
 .thesis h2 {
@@ -440,9 +510,21 @@ color: #2980B9;
   margin: auto;
 }
 
-/*Reimagine*/
+@media only screen and (max-width: 480px) {
 
+.thesis-column-1 {
+  width: 100%;
+  margin: 16px auto;
+}
 
+.thesis-column-2 {
+  display: none;
+}
+
+.reimagine {
+  display: none;
+}
+}
 
 /*Footer*/
 
@@ -467,4 +549,15 @@ footer h5 {
 }
 .footer {
   margin-right: 24px;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .footer {
+    display: none;
+  }
+  footer h5 {
+    text-align: center;
+    margin: 16px auto;
+  }
 }
