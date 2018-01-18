@@ -29,14 +29,6 @@ h5 {
   font-size: 0.8rem;
 }
 
-.courses img {
-    -webkit-filter:brightness(1);
-}
-
-.courses img:hover {
-    -webkit-filter:brightness(1.1);
-}
-
 /*Header*/
 
 header {
@@ -222,6 +214,7 @@ header {
 
 .button:hover {
   background-color: #3498DB;
+
 }
 
 .button a {
@@ -359,6 +352,7 @@ color: #2980B9;
 
 .info-column-2 {
   width: 100%;
+   border-bottom: solid 1px WhiteSmoke;
 }
 
 .info-column-2-box {
@@ -411,6 +405,7 @@ padding-top: 16px;
   transition: 0.5s ease-in-out;
   position: relative;
   border-bottom: solid 5px white;
+  cursor: pointer;
 }
 
 .course-box:hover{
@@ -421,6 +416,15 @@ padding-top: 16px;
   height: auto;
   width: 100%;
 }
+
+.courses img {
+    -webkit-filter:brightness(1);
+}
+
+.courses img:hover {
+    -webkit-filter:brightness(1.1);
+}
+
 
 .course-box-text {
   padding: 8px;
@@ -490,6 +494,7 @@ padding-top: 16px;
 .thesis-column-2-box {
   transition: background-color 1s ease;
   display: flex;
+  cursor: pointer;
 }
 
 .thesis-column-2-box:hover {
@@ -532,6 +537,7 @@ footer {
   display: flex;
   justify-content: space-between;
   border-top: lightgrey 1px solid;
+  align-content: center;
 }
 
 footer h5 {
@@ -549,6 +555,11 @@ footer h5 {
 }
 .footer {
   margin-right: 24px;
+}
+
+.social {
+  margin: auto;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 480px) {
